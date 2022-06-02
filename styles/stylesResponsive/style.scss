@@ -1,0 +1,31 @@
+@media (max-width: 640px) {
+    .login__box {
+        width: 80vw;
+        height: auto;
+        padding: 15px;
+    }
+    .login__box {
+        border-radius: 20px;
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
+            rgba(17, 17, 26, 0.1) 0px 16px 56px,
+            rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    }
+    body {
+        background-image: url("/assets/background.png");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+    }
+    .login__background--image {
+        display: none;
+    }
+    .login__box--form {
+        width: 50vw;
+    }
+    .login__box--other::before,
+    .login__box--other::after {
+        width: 10vw;
+    }
+}
