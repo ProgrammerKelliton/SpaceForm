@@ -27,5 +27,8 @@
   .login__box--other::after {
     width: 10vw;
   }
+  .login__box--LoginButton {
+    width: 40vw;
+  }
 }
 /*# sourceMappingURL=style.css.map */

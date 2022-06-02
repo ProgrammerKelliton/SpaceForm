@@ -18,7 +18,8 @@
         </div>
         <div class="login__box">
             <h1 class="login__box--title">Login</h1>
-            <form action="#" method="post" class="login__box--form">
+
+            <form action="#" method="post" id="formLogin" class="login__box--form">
                 <label for="emailInput">Email</label>
                 <input autofocus autocomplete="email" placeholder="Digite seu email" type="email" id="emailInput"
                     title="Digite seu email" class="login__box--input" required>
@@ -26,22 +27,25 @@
                 <label for="passwordInput">Senha</label>
                 <input autocomplete="current-password" placeholder="Digite sua senha" title="Digite sua senha"
                     type="password" id="passwordInput" class="login__box--input" required>
-                <button type="submit" class="login__box--LoginButton">Entrar</button>
             </form>
+            <button type="submit" class="login__box--LoginButton" form="formLogin">Entrar</button>
+
             <span class="login__box--other">Ou</span>
+
             <ul class="login__box--iconsList">
                 <li>
                     <a href="#"><img src="/assets/icons/google.svg" class="login__box--icon" alt="Icone do google"></a>
                 </li>
                 <li>
-                    <a href="#"><img src="/assets/icons/linkedin-round.svg" class="login__box--icon"
-                            alt="icone do linkedin"></a>
+                    <a href="https://www.linkedin.com/in/kelliton-santana-0951b622a/" target="_blank"><img
+                            src="/assets/icons/linkedin-round.svg" class="login__box--icon" alt="icone do linkedin"></a>
                 </li>
                 <li>
                     <a href="#"><img class="login__box--icon" src="/assets/icons/facebook.svg"
                             alt="Icone do facebook"></a>
                 </li>
             </ul>
+
             <a href="#" class="login__box--createAccount">Não tenho uma conta</a>
         </div>
     </main>
