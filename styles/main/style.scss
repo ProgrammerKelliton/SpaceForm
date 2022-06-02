@@ -1,0 +1,102 @@
+@mixin flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to right, #4158d0, #c850c0);
+    @include flex();
+    height: 100vh;
+}
+
+.login {
+    @include flex();
+    flex-direction: row;
+}
+
+.login__background--image {
+    width: 30vw;
+    height: 80vh;
+}
+
+.login__background--image {
+    border-radius: 20px 0px 0px 20px;
+    object-fit: cover;
+}
+
+.login__box {
+    background-color: white;
+    border-radius: 0px 20px 20px 0px;
+}
+
+.login__box--title {
+    margin-bottom: 5vh;
+}
+
+.login__box {
+    @include flex();
+    flex-direction: column;
+    width: 30vw;
+    height: 80vh;
+}
+
+.login__box--form {
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.login__box--input {
+    border-radius: 20px;
+    padding: 10px 7px;
+    margin: 5px 0px 15px 0px;
+}
+
+.login__box--other::before,
+.login__box--other::after {
+    width: 5vw;
+    height: 3px;
+    display: inline-block;
+    margin: 2px 7px;
+}
+
+.login__box--other::before,
+.login__box--other::after {
+    content: "";
+    background-color: black;
+}
+
+.login__box--iconsList {
+    list-style: none;
+    @include flex();
+    margin: 5px 0px;
+}
+
+.login__box--icon {
+    width: 25px;
+    margin: 5px;
+}
+
+.login__box--createAccount {
+    color: black;
+    text-decoration: none;
+    font-size: small;
+}
+
+.login__box--LoginButton {
+    border-radius: 20px;
+    border-color: transparent;
+    background-color: whitesmoke;
+}
+
+.login__box--LoginButton {
+    padding: 7px 20px;
+    margin: 17px 0px;
+}

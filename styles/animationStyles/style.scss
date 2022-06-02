@@ -1,0 +1,10 @@
+.login__box--icon:hover {
+    transform: scale(110%);
+}
+
+.login__box--LoginButton:hover {
+    background-color: black;
+    color: white;
+    transition: color 0.1s linear;
+    transition: background-color 1.5s linear;
+}
