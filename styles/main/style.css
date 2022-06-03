@@ -35,6 +35,8 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+          box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
 .login__background--image {
@@ -90,6 +92,11 @@ body {
   border-radius: 20px;
   padding: 10px 7px;
   margin: 5px 0px 15px 0px;
+}
+
+.login__box--input {
+  border-style: none;
+  border: 1px solid gray;
 }
 
 .login__box--other::before,
